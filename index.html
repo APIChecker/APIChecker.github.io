@@ -97,6 +97,7 @@
 			<p style="line-height: 2em; text-indent: 2em">
 				 we study ground-truth data from one of the world’s largest Android app markets (called Market-T), and extract 426 key APIs (out of 50K APIs) that are of fundamental importance to malware detection.
 			</p>
+			<div id='table-container'></div>
 			<script type="text/javascript">
       			function format_link(link){
         			if (link)
@@ -105,7 +106,7 @@
           				return "";
       			}
       			CsvToHtmlTable.init({
-        			csv_path: 'data/Health Clinics in Chicago.csv',
+        			csv_path: './API Set.csv',
         			element: 'table-container', 
         			allow_download: true,
         			csv_options: {separator: ',', delimiter: '"'},
