@@ -103,38 +103,10 @@
 			
 			<p></p>
 			<p style="text-align:center">
-				Table 1: The workflow and system components for supporting collaborative file editing in cloud storage services. The solid boxes denote the common components among all the studied services, whereas the dotted boxes denote components in specific services.
+				Table 1: The 426 key APIs which generally belong to the three categories (with some overlap).
 			</p>
 
-			<h2>
-				Optimizations
-			</h2>
-			<p style="line-height: 2em; text-indent: 2em">
-				Driven by the findings, we propose two optimizations which are fully compatible with the workflow and system architecture of existing cloud storage services (cf. Figure 1):
-			</p>
-			<ul>
-				<li>
-					A file-level editing lock based on file editing status is a better option than the hard-coded locks used by some of the existing cloud storage services. 
-					<!--The editing lock automatically takes effect and notifies users when a shared file is being edited by collaborators. 
-					It prevents the problems of “too early” or “too late” locking. 
-					Note that the editing lock is in-situ during file editing, and is fundamentally different from notifications postmortem to file changes.-->
-				</li>
-				<li>
-					The client should actively fetch the latest version of a collaborative file from the cloud before editing. 
-					<!--As this fetch is critical in avoiding conflicts, it should be differently treated with QoS guarantee (e.g., implemented with a dedicated queue). 
-					Most of the Web APIs provided by the cloud storage services can be leveraged to achieve this.-->
-				</li>
-			</ul>
 			
-			<h2>
-				<a target="_blank" href="https://github.com/ConflictReaper/ConflictReaper">ConfilctReaper</a> for Dropbox Windows PC
-			</h2>
-			<p style="line-height: 2em; text-indent: 2em">
-				Integrated aforementioned optimizations, we build ConflictReaper to assist existing cloud storage services in a fully transparent and automatic manner.
-				ConflictReaper is agnostic to the cloud-side implementation and is generically applicable to existing cloud storage services.
-				We implement the Windows version of ConflictReaper for Dropbox. 
-				The real-world experiment shows that it prevents 91% conflicts with acceptable network/computation overhead.
-			</p>
 			<!--<img class="img-responsive center-block" width="600px" alt="architecture" src="./module.jpg">
 			<p></p>
 			<p style="text-align:center">
