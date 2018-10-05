@@ -100,19 +100,7 @@
 				 we study ground-truth data from one of the world’s largest Android app markets (called Market-T), and extract 426 key APIs (out of 50K APIs) that are of fundamental importance to malware detection.
 			</p>
 			<div id='table-container'></div>
-			<script type="text/javascript" src="js/jquery.csv.min.js"></script>
-    		<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
-    		<script type="text/javascript" src="js/dataTables.bootstrap.js"></script>
-    		<script type="text/javascript" src="js/csv_to_html_table.js"></script>
-			<script>
-  				CsvToHtmlTable.init({
-    			csv_path: './API Set.csv', 
-   				element: 'table-container', 
-    			allow_download: true,
-    			csv_options: {separator: ',', delimiter: '"'},
-    			datatables_options: {"paging": false}
-  				});
-</script>
+			
 			<p></p>
 			<p style="text-align:center">
 				Figure 1: The workflow and system components for supporting collaborative file editing in cloud storage services. The solid boxes denote the common components among all the studied services, whereas the dotted boxes denote components in specific services.
@@ -162,6 +150,23 @@
 	<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
 
 	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.csv.min.js"></script>
+    <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/dataTables.bootstrap.js"></script>
+    <script type="text/javascript" src="js/csv_to_html_table.js"></script>
+
+    <script>
+  				CsvToHtmlTable.init({
+    			csv_path: './API Set.csv', 
+   				element: 'table-container', 
+    			allow_download: true,
+    			csv_options: {separator: ',', delimiter: '"'},
+    			datatables_options: {"paging": false}
+  				});
+	</script>
 
     
 
