@@ -65,15 +65,15 @@
 			</h2>
 			<p style="line-height: 2em; text-indent: 2em">
 				All the functions of an Android app are empowered by the (Java framework) APIs offered by the Android SDK.
-Thus, studying the APIs used by an app has long been considered a natural approach to detecting malicious apps (ie., malware).
+Thus, studying the APIs used by an app has long been considered a natural approach to detecting malicious apps (i.e., malware).
 In this work, we explore the feasibility of API-based malware detection at a market scale,
-which is required to be highly efficient (eg., 5 minutes per app as per Google Bouncer) while maintaining high detection accuracy.
+which is required to be highly efficient (e.g., 5 minutes per app as per Google Bouncer) while maintaining high detection accuracy.
 We instrument a dynamic analysis engine to systematically study the realistic performance and overhead of various existing detection strategies,
 using ground-truth data from one of the world's largest commercial Android app markets (an anonymized market which we refer to as Market-X).
 From the results we acquire in-depth, quantitative understandings of existing strategies, and meanwhile dispel several common misunderstandings.
 Based on the insights, we design APIChecker, a system that automatically detects malicious apps by examining their usage of a small set of key APIs,
 coupled with the requested permissions and the used intents.
-				<\p>
+				
 			<!--<p>
 				The functionality of cloud storage services has evolved from simple file backup to online collaboration.
 			</p>
@@ -90,16 +90,7 @@ coupled with the requested permissions and the used intents.
 			</p>
 			<p>
 				Our study leads to a number of findings that explain these unexpected and undesired patterns described in Table 1.
-			</p>
-			<p>
-				6
-			</p>
-			<p>
-				7
-			</p>-->
-
-			
-		  
+		
 			<h2>
 				API Set
 			</h2>
@@ -107,11 +98,12 @@ coupled with the requested permissions and the used intents.
 				 We study ground-truth data from one of the world’s largest Android app markets (called Market-X), and extract 426 key APIs (out of 50K APIs) which generally belong to the following three categories (with some overlap). The 426 key APIs (out of 50K APIs) are of fundamental importance to malware detection.
 			</p>
 			<ul>
-				<li>
-				<b>Restricted API:</b> 112 framework APIs whose usage should be restricted with dangerous-level permissions and those signature-level permissions with certain privileges.
-				</li>
+				
 				<li>
 				<b>Highly-Correlation API:</b> 260 framework APIs that have significant statistical correlations (|PCC| > 0.2) 2 with the malice of apps. 
+				</li>
+<li>
+				<b>Restricted API:</b> 112 framework APIs whose usage should be restricted with dangerous-level permissions and those signature-level permissions with certain privileges.
 				</li>
 				<li>
 				<b>	Sensitive Operation API:</b> 70 framework APIs that can enable sensitive operations for conducting certain attacks (e.g., ransomware and background malware).
