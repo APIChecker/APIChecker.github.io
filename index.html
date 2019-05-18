@@ -105,6 +105,44 @@
 			</h2>
 			<p style="line-height: 2em; text-indent: 2em">
 				We currently release the model configurations before May 23th.
+<table border="1">
+<tr>
+<th>Algorithm</th>
+<th>Python Code in Sklearn</th>
+</tr>
+<tr>
+<td>Naive Bayes</td>
+<td>BernoulliNB()</td>
+</tr>
+<tr>
+<td>Random Forest</td>
+<td>RandomForestClassifier(n_estimators=10)</td>
+</tr>
+<tr>
+<td>CART Decision Tree</td>
+<td>DecisionTreeClassifier()</td>
+</tr>
+<tr>
+<td>Logistic Regression</td>
+<td>LinearRegression()</td>
+</tr>
+<tr>
+<td>K-Nearest Neighbor</td>
+<td>KNeighborsClassifier(n_neighbors=5,weights=’uniform’, algorithm=’auto’)</td>
+</tr>
+<tr>
+<td>Support Vector Machine</td>
+<td>svm.SVC(gamma='auto')</td>
+</tr>
+<tr>
+<td>Multilayer Perceptron</td>
+<td>MLPClassifier(hidden_layer_sizes=(100, ), solver=’adam’, alpha=0.0001)</td>
+</tr>
+<tr>
+<td>Gradient Boosting Decision Tree</td>
+<td>GradientBoostingClassifier(n_estimators=100, learning_rate=0.1, max_depth=3, random_state=0)</td>
+</tr>
+</table>
 			</p>
 			<h2>
 				Lightweight Emulator
