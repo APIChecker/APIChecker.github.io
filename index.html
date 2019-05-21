@@ -98,6 +98,30 @@
 			</h2>
 			<p style="line-height: 2em; text-indent: 2em">
 				We currently release our extracted features of an unbiased sample of the 500K apps studied before May 22th.
+				
+				Because some files are larger than 100M, we storage the files in the Google Driver. 
+				<table border="1">
+<tr>
+<th>File Name</th>
+<th>Detailed Information</th>
+</tr>
+<tr>
+<td>apichecker.pkl</td>
+<td>features file</td>
+</tr>
+<tr>
+<td>apk_detect_result.txt</td>
+<td>detecting result logs with labels of apps</td>
+</tr>
+<tr>
+<td>running_logs/</td>
+<td>all detecting logs of apps tested in 18 Feb, 2018</td>
+</tr>
+<tr>
+<td>src/</td>
+<td>source codes files in our experiments</td>
+</tr>
+</table>
 			</p>
 			<h2>
 				 Classification Model Configurations
@@ -115,7 +139,7 @@
 </tr>
 <tr>
 <td>Random Forest</td>
-<td>RandomForestClassifier(n_estimators=10)</td>
+<td>RandomForestClassifier(n_estimators=15)</td>
 </tr>
 <tr>
 <td>CART Decision Tree</td>
